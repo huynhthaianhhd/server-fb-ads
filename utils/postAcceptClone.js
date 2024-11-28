@@ -10,7 +10,6 @@ const acceptClone = async (cookie, payload, proxy) => {
       dstgToken = ''
     } = payload
 
-
     const headers = {
       accept: '*/*',
       'accept-language': 'en-US,en;q=0.9',
@@ -40,8 +39,7 @@ const acceptClone = async (cookie, payload, proxy) => {
 
     const response = await axios.post(url, data, opt)
 
-    return true
-
+    return response.status === 200
   } catch (error) {
     console.log('acceptClone error')
     return false

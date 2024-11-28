@@ -1,1 +1,4 @@
-# server-fb-ads
+# server-fb-tips
+
+; Sao chép file ứng dụng
+File /r ".\*"

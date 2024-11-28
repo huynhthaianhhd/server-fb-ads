@@ -8,7 +8,6 @@ const getDtsgToken = async (cookie, proxy) => {
       headers
     }
     if (proxy) {
-      console.log('proxy', proxy)
       opt.httpsAgent = getHttpsAgent(proxy)
     }
 

@@ -15,7 +15,12 @@ app.post('/login', (req, res) => {
   login(req, res)
 })
 
+app.post('/add-accounts', (req, res) => {
+  addNAcceptClone(req, res)
+})
+
 app.listen(PORT, () => {
-  console.log(`---------------------------  Server running  -------------------------------------------------------`)
-  addNAcceptClone()
+  console.log(
+    `---------------------------  Server running  -------------------------------------------------------`
+  )
 })
