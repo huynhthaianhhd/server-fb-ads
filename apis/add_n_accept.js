@@ -44,7 +44,7 @@ const addNAcceptClone = async (req, res) => {
       `----------------------------------------------------------------------------------`
     )
     if (status === 'PENDING') {
-      console.log('Business request account: ', clone.id)
+      console.log('Business request account: ', actId)
     }
 
     const success = await acceptClone(clone.cookie, {
@@ -55,7 +55,7 @@ const addNAcceptClone = async (req, res) => {
     })
 
     if (success) {
-      console.log('Accept clone success: ', clone.id)
+      console.log('Accept clone success: ', actId)
       console.log(
         `---------------------------------------------------------------------------------- \n`
       )
